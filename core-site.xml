@@ -1,0 +1,12 @@
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://mycluster</value>
+        <description>The name of the default file system. A URI whose scheme and authority determine the FileSystem implementation. The uri's scheme determines the config property (fs.SCHEME.impl) naming the FileSystem implementation class. The uri's authority is used to determine the host, port, etc. for a filesystem.</description>
+    </property>
+    <property>
+        <name>ha.zookeeper.quorum</name>
+        <value>10.0.0.8:2181,10.0.0.9:2181,10.0.0.10:2181</value>
+        <description>A list of ZooKeeper server addresses, separated by commas, that are to be used by the ZKFailoverController in automatic failover.(zk1.example.com:2181,zk2.example.com:2181,zk3.example.com:2181)</description> 
+    </property>
+</configuration>
